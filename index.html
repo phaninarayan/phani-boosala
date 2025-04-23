@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phani Boosala | Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .fade-section {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .fade-section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Phani Boosala</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#overview">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mt-5">
+    <section id="overview" class="mb-5 fade-section">
+      <h2 class="border-bottom pb-2">Overview</h2>
+      <img src="phani headshot.jpg" alt="Phani Boosala" class="rounded-circle d-block mx-auto mb-3" width="150" height="150">
+      <p>Hi, I'm Phani — a curious, story-loving strategist currently wrapping up my MBA at Georgetown. Whether it’s helping small businesses grow or rethinking ad strategy at a student newspaper, I’m always driven by one thing: making meaningful ideas land where they matter.</p>
+
+      <h3 class="mt-4">Quick Hits (Professional)</h3>
+      <div class="card p-3 mb-3">
+        <p>🔍 Helped a weather data startup expand to two new countries and bring in revenue from 6 U.S. counties — all in one summer.</p>
+        <p>📰 Boosted digital readership at The Hoya by building community-driven campaigns and partnering with student orgs.</p>
+        <p>📊 Advised media clients on pricing and subscription strategy during my time as a market research associate.</p>
+      </div>
+
+      <h3>Quick Hits (Personal)</h3>
+      <div class="card p-3 mb-3">
+        <p>🎬 Wrote a script for an indie film and directed a play with a 15-member cast.</p>
+        <p>🍷 President of the Georgetown Wine Society (yes, we take wine and vibes seriously).</p>
+        <p>🌄 Weekend planner of hikes, chai-maker, and casual tennis enthusiast (very casual).</p>
+      </div>
+
+      <h3>Skills</h3>
+      <ul class="list-group list-group-flush mb-3">
+        <li class="list-group-item">Sales Strategy & CRM (HubSpot, Zoho, Salesforce)</li>
+        <li class="list-group-item">Market & Competitive Research</li>
+        <li class="list-group-item">Campaign Planning & A/B Testing</li>
+        <li class="list-group-item">Google Analytics & Tableau</li>
+        <li class="list-group-item">Storytelling & Client Engagement</li>
+      </ul>
+
+      <div class="mb-4">
+        <a href="Phani_Resume.pdf" target="_blank" class="btn btn-primary me-2">View Resume</a>
+        <a href="Phani_Resume.pdf" download class="btn btn-outline-secondary">Download Resume</a>
+      </div>
+    </section>
+
+    <section id="experience" class="mb-5 fade-section">
+      <h2 class="border-bottom pb-2">Experience</h2>
+
+      <div class="card p-3 mb-3">
+        <h4>Synoptic Data</h4>
+        <p>Helped expand to two new countries and landed six U.S. county partnerships by tailoring demos and refining payment models. Built sales plans, worked closely with customer success, and spotted upsell and churn risks.</p>
+      </div>
+
+      <div class="card p-3 mb-3">
+        <h4>The Hoya</h4>
+        <p>Ran growth for Georgetown’s student newspaper. Created ad packages, closed deals, improved CTR by placing ads near high-performing stories, and boosted digital traffic by teaming up with student orgs.</p>
+      </div>
+
+      <div class="card p-3 mb-3">
+        <h4>Adapt Ideations</h4>
+        <p>Led go-to-market research for 5 countries, collaborated with product teams to reduce complaints by 20%, and helped improve customer follow-up processes that led to more renewals and demo interest.</p>
+      </div>
+
+      <div class="card p-3 mb-3">
+        <h4>Mordor Intelligence</h4>
+        <p>Worked across B2B sales and research. Closed deals with media and SaaS clients, supported product launch planning with competitive insights, and helped media brands identify pricing and subscription strategies.</p>
+      </div>
+
+      <div class="card p-3">
+        <h4>Consulting for DC Small Businesses</h4>
+        <p>As part of a Georgetown program, worked with three local businesses to help them explore new markets, improve pricing, and launch e-commerce plans.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="mb-5 fade-section">
+      <h2 class="border-bottom pb-2">Contact</h2>
+      <p>Email: <a href="mailto:phani@email.com">phani@email.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/phaneendra-boosala" target="_blank">linkedin.com/in/phaneendra-boosala</a></p>
+    </section>
+  </main>
+
+  <footer class="bg-light text-center py-3">
+    <p class="mb-0">&copy; 2025 Phani Boosala. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Smooth scroll reveal animation -->
+  <script>
+    const sections = document.querySelectorAll('.fade-section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+    sections.forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>
